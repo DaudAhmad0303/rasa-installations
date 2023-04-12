@@ -83,27 +83,40 @@ Python Path       :         C:\Users\username\.conda\envs\rasa281\python.exe
 
 ---------------------------------------------------------------------------------------------
 [For Running on WhatsApp relevent commands]
+```
 $ rasa run -m models --enable-api --cors "*"
-$ ngrok http 5005
-
-
+```
+Or we can also use to run rasa server:
+```
 $ rasa run --log-file out.log --cors * --enable-api
-
+```
+```
+$ ngrok http 5005
+```
 --------------------------------------------------------------------------------------------
 For voice chatbot Libraries
 
 For Automatic Speech Recognition (ASR) | Speech To Text (STT)
-$ pip install SpeechRecognition PyAudio
+
+```
+pip install SpeechRecognition PyAudio
+```
 
 For Text to Speech (TTS)
-$ pip install gtts
+```
+pip install gtts
+```
 [For Windows]
-$ pip install mpyg321
+```
+pip install mpyg321
+```
 [For Ubuntu]
-$ sudo apt-get install mpg321
-
+```
+sudo apt-get install mpg321
+```
 
 For Running Endpoint:
-$ rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml 
-
+```
+rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml 
+```
 ----
